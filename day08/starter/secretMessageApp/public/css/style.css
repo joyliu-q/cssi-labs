@@ -6,6 +6,8 @@
   --shadowDark: #D9DDE6;
   --background: #E4E9F2;
   --shadowLight: #EFF5FE;
+  --primary: hsl(171, 100%, 41%);
+  --primaryLight: hsl(141, 71%, 48%);
 }
 
 body {
@@ -28,4 +30,24 @@ input {
 
 a {
   font-weight: 600;
+}
+
+.isMessageSelf {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left:40%;
+     border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 8px 8px 15px var(--shadowDark), -8px -8px 15px var(--shadowLight);
+}
+
+.isMessageOther {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right:40%;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 8px 8px 15px var(--shadowDark), -8px -8px 15px var(--shadowLight);
 }
